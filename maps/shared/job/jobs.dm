@@ -43,7 +43,7 @@
 						/datum/job/jr_upkeep,
 						/datum/job/cargo_tech,
 						/datum/job/cargo_tech/machinist,
-						/datum/job/mining,
+						///datum/job/mining,
 						/datum/job/ouvrier,
 						/datum/job/chef,
 						/datum/job/chaplain,

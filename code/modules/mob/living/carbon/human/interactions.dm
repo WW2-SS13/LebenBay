@@ -307,11 +307,15 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			if (prob(35))
 				message = pick("pounds [P]'s pussy.")
 
+			if (H.potenzia >= 30)
+				P.adjustBruteLoss(H.potenzia/5)
+				P << "<span class = 'danger'>Your pussy starts to tear apart!</span>"
+
 			if (H.lastfucked != P || H.lfhole != hole)
 				message = pick(" shoves their dick into [P]'s pussy.")
 				H.lastfucked = P
 				H.lfhole = hole
-			
+
 			if(P.virgin)
 				P.virgin = FALSE
 				H.visible_message("<font color=purple><B>[H] pop's [P]'s cherry.</B></font>")
@@ -344,6 +348,10 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 			message = pick("fucks [P]'s ass.")
 			if (prob(35))
 				message = pick("fucks [P]'s ass.")
+
+			if (H.potenzia >= 30)
+				P.adjustBruteLoss(H.potenzia/3)
+				P << "<span class = 'danger'>Your ass starts to tear apart!</span>"
 
 			if (H.lastfucked != P || H.lfhole != hole)
 				message = pick(" shoves their dick into [P]'s asshole.")

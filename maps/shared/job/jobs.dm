@@ -17,7 +17,7 @@
 						/datum/job/mining,
 						/datum/job/ouvrier,
 						/datum/job/chef,
-						///datum/job/chaplain,
+						/datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
 						/datum/job/supreme_arbiter						
@@ -46,7 +46,7 @@
 						///datum/job/mining,
 						/datum/job/ouvrier,
 						/datum/job/chef,
-						///datum/job/chaplain,
+						/datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
 						/datum/job/supreme_arbiter						
@@ -76,7 +76,7 @@
 						/datum/job/mining,
 						/datum/job/ouvrier,
 						/datum/job/chef,
-						///datum/job/chaplain,
+						/datum/job/chaplain,
 						/datum/job/janitor,
 						/datum/job/arbiter,
 						/datum/job/supreme_arbiter,						

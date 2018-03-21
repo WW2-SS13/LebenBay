@@ -97,11 +97,6 @@
 	icon_state = "grass0"
 	initial_flooring = /decl/flooring/grass
 
-/turf/simulated/floor/cave
-	name = "cave flooring"
-	icon = 'icons/turf/flooring/grass.dmi'
-	icon_state = "grass0"
-
 /turf/simulated/floor/diona
 	name = "biomass"
 	icon = 'icons/turf/floors.dmi'

@@ -27,6 +27,14 @@
 	time = 30
 	base_chance = 100
 
+/datum/crafting_recipe/cansiter
+	name = "Canister"
+	parts = list(/obj/item/cylinder_large_hollow = 1, /obj/item/pipe  = 1)
+	tools = list(/obj/item/weapon/weldingtool = 1)
+	result = list(/obj/machinery/portable_atmospherics/canister/empty/air = 1)
+	time = 30
+	base_chance = 100
+
 /datum/crafting_recipe/bucket
 	name = "Bucket"
 	parts = list(/obj/item/cylinder_large_hollow = 1, /obj/item/metal_bar  = 1)

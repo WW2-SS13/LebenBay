@@ -209,10 +209,26 @@
 	icon_state = "milled_ammo_casing"
 	matter = list(DEFAULT_WALL_MATERIAL = 50)
 
-/obj/item/bullet_38
-	name = "Bullet"
+/obj/item/bullet/cal_38
+	name = ".38 Bullet"
 	icon = 'icons/obj/crafting.dmi'
 	w_class = ITEM_SIZE_SMALL
 	desc = "This is a small ball of metal.  Can probably work as a bullet"
 	icon_state = ".38_bullet"
 	matter = list(DEFAULT_WALL_MATERIAL = 200)
+
+/obj/item/bullet/cal_45
+	name = ".45 Bullet"
+	icon = 'icons/obj/crafting.dmi'
+	w_class = ITEM_SIZE_SMALL
+	desc = "This is a small ball of metal.  Can probably work as a bullet"
+	icon_state = ".45_bullet"
+	matter = list(DEFAULT_WALL_MATERIAL = 300)
+
+/obj/item/bullet/cal_357
+	name = ".357 Bullet"
+	icon = 'icons/obj/crafting.dmi'
+	w_class = ITEM_SIZE_SMALL
+	desc = "This is a small ball of metal.  Can probably work as a bullet"
+	icon_state = ".357_bullet"
+	matter = list(DEFAULT_WALL_MATERIAL = 300)

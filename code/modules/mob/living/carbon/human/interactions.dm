@@ -351,7 +351,7 @@ mob/living/carbon/human/proc/fuck(mob/living/carbon/human/H as mob, mob/living/c
 
 			if (H.potenzia >= 30)
 				P.adjustBruteLoss(H.potenzia/3)
-				P << "<span class = 'danger'>Your pussy starts to tear apart!</span>"
+				P << "<span class = 'danger'>Your ass starts to tear apart!</span>"
 
 			if (H.lastfucked != P || H.lfhole != hole)
 				message = pick(" shoves their dick into [P]'s asshole.")

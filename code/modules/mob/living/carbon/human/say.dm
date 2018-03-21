@@ -13,6 +13,14 @@
 	message = sanitize(message)
 	..(message, alt_name = alt_name, speaking = language)
 
+	if (findtext(message, "Yag ton era spart!"))
+		if (mind && mind.assigned_job && mind.assigned_job.title == "Arbiter")
+			for (var/turf/simulated/floor/plating/deathnet/D in view(world.view, src))
+				if (!deathnet.start())
+					D.visible_message("<span class = 'danger'>The Deathnet flashes red, but it isn't ready to activate again.</span>")
+				break
+
+
 /mob/living/carbon/human/proc/forcesay(list/append)
 	if(stat == CONSCIOUS)
 		if(client)

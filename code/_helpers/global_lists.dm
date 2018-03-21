@@ -104,6 +104,11 @@ var/global/list/string_slot_flags = list(
 	"holster" = SLOT_HOLSTER
 )
 
+// misc
+var/datum/deathnet/deathnet = null
+var/list/deathnet_turfs = list()
+var/list/smes_list = list()
+
 //////////////////////////
 /////Initial Building/////
 //////////////////////////

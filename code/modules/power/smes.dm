@@ -64,6 +64,7 @@
 
 /obj/machinery/power/smes/New()
 	..()
+	smes_list += src
 	spawn(5)
 		if(!powernet)
 			connect_to_network()
@@ -91,12 +92,18 @@
 
 	return
 
+/obj/machinery/smes/Del()
+	smes_list -= src
+	..()
+
 /obj/machinery/power/smes/add_avail(var/amount)
 	if(..(amount))
 		powernet.smes_newavail += amount
 		return 1
 	return 0
 
+/obj/machinery/power/smes/proc/deathnet_powered(var/sacrifices)
+	add_avail(sacrifices * 50000)
 
 /obj/machinery/power/smes/disconnect_terminal()
 	if(terminal)

@@ -9,9 +9,6 @@
 		/area/shuttle/escape_pod1
 	)
 
-/area
-	base_turf = /turf/simulated/floor/cave
-
 /area/shuttle/arrival
 	name = "\improper Arrival Shuttle"
 

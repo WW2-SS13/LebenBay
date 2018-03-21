@@ -27,7 +27,7 @@
 	time = 30
 	base_chance = 100
 
-/datum/crafting_recipe/cansiter
+/datum/crafting_recipe/canister
 	name = "Canister"
 	parts = list(/obj/item/cylinder_large_hollow = 1, /obj/item/pipe  = 1)
 	tools = list(/obj/item/weapon/weldingtool = 1)

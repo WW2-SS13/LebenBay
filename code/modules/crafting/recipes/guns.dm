@@ -33,7 +33,23 @@
 /datum/crafting_recipe/ammo_38
 	name = "38 Bullet"
 	tools = list()
-	parts = list(/obj/item/bullet_casing = 1, /obj/item/bullet_38 = 1, /obj/item/stack/material/phoron = 1)
+	parts = list(/obj/item/bullet_casing = 1, /obj/item/bullet/cal_38 = 1, /obj/item/stack/material/phoron = 1)
 	result = list(/obj/item/ammo_casing/c38  = 1)
-	time = 30
+	time = 15
+	base_chance = 100
+
+/datum/crafting_recipe/ammo_45
+	name = "45 Bullet"
+	tools = list()
+	parts = list(/obj/item/bullet_casing = 1, /obj/item/bullet/cal_45 = 1, /obj/item/stack/material/phoron = 1)
+	result = list(/obj/item/ammo_casing/c45  = 1)
+	time = 15
+	base_chance = 100
+
+/datum/crafting_recipe/ammo_357
+	name = "357 Bullet"
+	tools = list()
+	parts = list(/obj/item/bullet_casing = 1, /obj/item/bullet/cal_357 = 1, /obj/item/stack/material/phoron = 1)
+	result = list(/obj/item/ammo_casing/a357  = 1)
+	time = 15
 	base_chance = 100

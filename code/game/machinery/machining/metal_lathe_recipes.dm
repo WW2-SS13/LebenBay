@@ -108,6 +108,16 @@
 	category = "General"
 
 /datum/metal_lathe/recipe/bullet_38
-	name = "Bullet"
-	path = /obj/item/bullet_38
+	name = ".38 Bullet"
+	path = /obj/item/bullet/cal_38
+	category = "General"
+
+/datum/metal_lathe/recipe/bullet_357
+	name = ".357 Bullet"
+	path = /obj/item/bullet/cal_357
+	category = "General"
+
+/datum/metal_lathe/recipe/bullet_45
+	name = ".45 Bullet"
+	path = /obj/item/bullet/cal_45
 	category = "General"

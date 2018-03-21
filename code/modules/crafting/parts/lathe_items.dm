@@ -34,7 +34,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	desc = "This is a glass bar.  Can be made into lots of stuff"
 	icon_state = "glass_bar"
-	matter = list("glass" = 300)
+	matter = list("glass" = 600)
 
 	mill()
 		return /obj/item/glass_tube
@@ -45,7 +45,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	desc = "A hollow glass bar.  Looks like it would fit perfectly as a tube light."
 	icon_state = "glass_tube"
-	matter = list("glass" = 200)
+	matter = list("glass" = 400)
 
 
 /obj/item/metal_shiv
@@ -78,9 +78,20 @@
 	name = "Glass handle"
 	icon = 'icons/obj/crafting.dmi'
 	w_class = ITEM_SIZE_NORMAL
-	desc = "This is a piece of glass.  It could be used as a handle"
+	desc = "This is a piece of glass.  It could be used as a handle, or hollowed out into a cup"
 	icon_state = "glass_handle"
 	matter = list("glass" = 400)
+
+	mill(var/mob/user)
+		return /obj/item/glass_handle_hollow
+
+/obj/item/glass_handle_hollow
+	name = "Hollow Glass handle"
+	icon = 'icons/obj/crafting.dmi'
+	w_class = ITEM_SIZE_NORMAL
+	desc = "This is a piece of glass.  It's been hollowed out in the middle"
+	icon_state = "glass_handle_hollow"
+	matter = list("glass" = 200)
 
 /obj/item/cylinder_large
 	name = "Large Cylinder"

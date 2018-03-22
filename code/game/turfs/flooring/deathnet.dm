@@ -15,11 +15,11 @@
 		spawn (v*2)
 			create_fire(5)
 	for (var/mob/living/carbon/C in contents)
-		if (C.stat == CONSCIOUS)
+		if (C.stat != DEAD)
 			C.emote("scream")
 			C.Weaken(10)
 			C.Stun(10)
-			C.adjustFireLoss(500)
+			C.dust()
 			// partially charge all SMES, "fully" charge one
 			for (var/obj/machinery/power/smes/S in smes_list)
 				S.deathnet_powered(1)

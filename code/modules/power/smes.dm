@@ -103,7 +103,7 @@
 	return 0
 
 /obj/machinery/power/smes/proc/deathnet_powered(var/sacrifices)
-	add_avail(sacrifices * 50000)
+	charge = max(charge+(sacrifices*50000), capacity)
 
 /obj/machinery/power/smes/disconnect_terminal()
 	if(terminal)

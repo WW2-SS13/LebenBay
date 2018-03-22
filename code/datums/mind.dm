@@ -124,6 +124,10 @@
 			if(H.religion == ILLEGAL_RELIGION)
 				brothers_message += "<b> [H.name]</b><br>"
 		output += brothers_message
+	else
+		if (assigned_role && list("Arbiter", "Supreme Arbiter").Find(assigned_role))
+			output += "<br>"
+			output += "The words to activate the Deathnet are \"Yag ton era spart!\""
 	recipient << browse(output,"window=memory")
 
 /datum/mind/proc/edit_memory()

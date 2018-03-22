@@ -4,13 +4,14 @@
 /turf/simulated/floor/plating/deathnet/New()
 	..()
 	deathnet_turfs += src
+	set_light(2,2,"#ffffff")
 
 /turf/simulated/floor/plating/deathnet/Del()
 	deathnet_turfs -= src
 	..()
 
 /turf/simulated/floor/plating/deathnet/process()
-	create_fire(1000)
+	create_fire(5)
 	for (var/mob/living/carbon/C in contents)
 		C.emote("scream")
 		C.Weaken(10)

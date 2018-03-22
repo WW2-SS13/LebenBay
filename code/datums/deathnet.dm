@@ -1,3 +1,7 @@
+/hook/roundstart/proc/setup_deathnet()
+	new /datum/deathnet
+	return 1
+
 /datum/deathnet
 	var/next_start = -1
 

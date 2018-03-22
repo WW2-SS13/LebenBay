@@ -13,10 +13,10 @@
 	message = sanitize(message)
 	..(message, alt_name = alt_name, speaking = language)
 
-	if (findtext(message, "Yag ton era spart!"))
-		if (mind && mind.assigned_job && mind.assigned_job.title == "Arbiter")
+	if (findtext(lowertext(message), "yag ton era spart!"))
+		if (mind && mind.assigned_role && list("Arbiter", "Supreme Arbiter").Find(mind.assigned_role)) // why is assigned_job null, fuck
 			for (var/turf/simulated/floor/plating/deathnet/D in view(world.view, src))
-				if (!deathnet.start())
+				if (!deathnet || !deathnet.start())
 					D.visible_message("<span class = 'danger'>The Deathnet flashes red, but it isn't ready to activate again.</span>")
 				break
 

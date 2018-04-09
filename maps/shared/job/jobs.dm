@@ -179,8 +179,8 @@
 		H.add_skills(rand(25, 50), rand(25,50), rand(65, 75))
 
 /datum/job/scientist
-	title = "Tenchotrainee"
-	supervisors = "Technomancer"
+	title = "Ahnenerbe"
+	supervisors = "Ahnenerbe Master"
 	minimal_player_age = 19
 	economic_modifier = 2
 	ideal_character_age = 30
@@ -224,7 +224,7 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_maint_tunnels)
 
 /datum/job/hos
-	title = "Head Peacekeeper"
+	title = "SS-Rottenfuhrer"
 	supervisors = "the Magistrate"
 	department_flag = SEC
 	faction = "Station"
@@ -251,7 +251,7 @@
 
 
 /datum/job/officer
-	title = "Peacekeeper"
+	title = "SS-Schutze"
 	department = "Security"
 	department_flag = SEC
 	faction = "Station"
@@ -391,8 +391,8 @@
 
 /datum/job/cadet
 	selection_color = "#633d63"
-	title = "Cadet"
-	supervisors = "the peacekeepers"
+	title = "SS-Cadet"
+	supervisors = "the SS"
 	minimal_player_age = 16
 	economic_modifier = 2
 	ideal_character_age = 21
@@ -479,7 +479,7 @@
 
 //CHURCH JOBS
 /datum/job/arbiter
-	title = "Arbiter"
+	title = "Karotechia"
 	department = "Civilian"
 	supervisors = "the Supreme Arbiter and Verina"
 	faction = "Station"
@@ -501,7 +501,7 @@
 
 //The inquisitor, aka the supreme arbiter.
 /datum/job/supreme_arbiter
-	title = "Supreme Arbiter"
+	title = "Supreme Karotechia"
 	department = "Civilian"
 	supervisors = "our glorious God, Verina"
 	faction = "Station"
